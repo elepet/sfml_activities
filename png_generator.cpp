@@ -8,13 +8,13 @@ constexpr int screenWidth=600;
 constexpr int screenHeight=600;
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(screenWidth, screenHeight), "PNG Generator");
+    sf::RenderWindow window(sf::VideoMode(screenWidth,screenHeight),"PNG Generator");
     sf::Event event;
     sf::Image image;
     image.create(256,256);
-    for(int z = 0; z < 256; z++) {
-        for(int y = 0; y < 256; y++){
-            for(int x = 0; x < 256; x++)
+    for(int z=0;z<256;z++) {
+        for(int y=0;y<256;y++){
+            for(int x=0;x<256;x++)
             {
                 sf::Color color;
 
